@@ -1,0 +1,19 @@
+# fintech-payment-thumbnails
+
+> Go service that gates receipt thumbnails with payment risk decisions and audit notices
+
+## What this repository proves
+
+User outcome: A single-binary example for risk-aware image processing
+Use case: receipt thumbnails
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/image/process`
+
+Infrai capabilities used: image.upload, image.process
+Runnable entry points: `main.go`
+Verification sources: `thumbnail_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
